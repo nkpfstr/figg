@@ -1,7 +1,7 @@
 {
   "name": "figg",
   "version": "0.0.0",
-  "description": "A simple utility for managing YAML and JSON configuration files",
+  "description": "A simple utility for managing YAML configuration files. Also supports JSON.",
   "main": "index.js",
   "repository": "github:nkpfstr/figg",
   "author": "Nick Pfisterer <nick@lunamachine.net>",
@@ -9,8 +9,10 @@
   "engines": {
     "node": ">=4"
   },
-  "main": "index.js",
   "scripts": {},
-  "dependencies": {},
+  "dependencies": {
+    "fs-extra": "^2.1.2",
+    "js-yaml": "^3.8.3"
+  },
   "devDependencies": {}
 }
