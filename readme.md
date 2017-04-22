@@ -64,6 +64,11 @@ Path to the directory where the config file is loaded/saved.
 
 #### Examples
 
+This example uses the default options. In this case, Figg will load/save your config at `./config.yml`.
+```js
+const config = new Figg()
+```
+
 In this example, Figg will load/save your config at `./app/settings.json`.
 ```js
 const config = new Figg({
@@ -73,12 +78,29 @@ const config = new Figg({
 })
 ```
 
-TODO
-- config.load()
-- config.save()
-- config.get()
-- config.set()
-- config.has()
+### Instance Methods
+
+#### config.get(key)
+Type: `string`<br>
+
+Returns the value of `key` if it exists.
+
+#### config.set(key, value)
+
+Add a new property of `key: value` to the config.
+
+#### config.set(object)
+
+Add multiple properties at once.
+
+#### config.has(key)
+`TODO`
+
+#### config.load()
+`TODO`
+
+#### config.save()
+`TODO`
 
 ## License
 MIT © Nick Pfisterer
