@@ -94,13 +94,16 @@ Add a new property of `key: value` to the config.
 Add multiple properties at once.
 
 #### config.has(key)
-`TODO`
+
+Check if a property exists.
 
 #### config.load()
-`TODO`
+
+Load an existing config file and return it as an object.
 
 #### config.save()
-`TODO`
+
+Save a config file to disk.
 
 ## License
 MIT © Nick Pfisterer
