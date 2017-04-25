@@ -81,13 +81,12 @@ const config = new Figg({
 ### Instance Methods
 
 #### config.get(key)
-Type: `string`<br>
 
 Returns the value of `key` if it exists.
 
 #### config.set(key, value)
 
-Add a new property of `key: value` to the config.
+Add a new property to the config.
 
 #### config.set(object)
 
@@ -99,11 +98,11 @@ Check if a property exists.
 
 #### config.load()
 
-Load an existing config file and return it as an object.
+Load a config file. Returns an object.
 
 #### config.save()
 
-Save a config file to disk.
+Save a config file.
 
 ## License
 MIT © Nick Pfisterer
