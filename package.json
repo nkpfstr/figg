@@ -2,10 +2,10 @@
   "name": "figg",
   "version": "0.0.0",
   "description": "A simple utility for managing YAML configuration files. Also supports JSON.",
-  "main": "index.js",
+  "license": "MIT",
   "repository": "github:nkpfstr/figg",
   "author": "Nick Pfisterer <nick@lunamachine.net>",
-  "license": "MIT",
+  "main": "index.js",
   "engines": {
     "node": ">=4"
   },
