@@ -52,10 +52,16 @@ class Figg {
 
   // Get a property
   get (key) {
-    if (this.data.hasOwnProperty(key)) {
-      return this.data[key]
-    } else {
+    let result = key.split('.').reduce((object, property) => {
+      if (object === null) return
+
+      return object[property]
+    }, this.data)
+
+    if (result === undefined) {
       throw new Error(`${key} not found`)
+    } else {
+      return result
     }
   }
 
