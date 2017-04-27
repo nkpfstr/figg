@@ -7,7 +7,7 @@ class Figg {
   constructor (opts) {
     this.opts = Object.assign({
       name: 'config',
-      extension: '.json',
+      extension: '.yml',
       path: process.cwd()
     }, opts)
     this.data = {}
