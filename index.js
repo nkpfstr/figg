@@ -74,7 +74,11 @@ class Figg {
 
   // Check if a property exists
   has (key) {
-    return this.data.hasOwnProperty(key)
+    if (typeof key !== 'string') {
+      throw new Error(`Expected key to be string, was ${typeof key}`)
+    } else {
+      return this.data.hasOwnProperty(key)
+    }
   }
 }
 
