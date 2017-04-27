@@ -9,10 +9,14 @@
   "engines": {
     "node": ">=4"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "ava"
+  },
   "dependencies": {
     "fs-extra": "^2.1.2",
     "js-yaml": "^3.8.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "ava": "^0.19.1"
+  }
 }
