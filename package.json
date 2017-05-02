@@ -5,13 +5,26 @@
   "license": "MIT",
   "repository": "github:nkpfstr/figg",
   "author": "Nick Pfisterer <nick@lunamachine.net>",
-  "main": "index.js",
   "engines": {
     "node": ">=4"
   },
   "scripts": {
     "test": "ava"
   },
+  "main": "index.js",
+  "keywords": [
+    "config",
+    "configuration",
+    "settings",
+    "preferences",
+    "save",
+    "load",
+    "read",
+    "write",
+    "yml",
+    "yaml",
+    "json"
+  ],
   "dependencies": {
     "fs-extra": "^2.1.2",
     "js-yaml": "^3.8.3"
