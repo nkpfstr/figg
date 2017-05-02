@@ -1,5 +1,5 @@
 # Figg
-> A simple utility for managing YAML and JSON configuration files
+> A simple utility for managing YAML configuration files. Also supports JSON.
 
 [![Build Status](https://travis-ci.org/nkpfstr/figg.svg?branch=master)](https://travis-ci.org/nkpfstr/figg)
 
