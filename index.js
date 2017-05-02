@@ -33,20 +33,12 @@ class Figg {
     }
   }
 
-  // Save config object as a file named <opts.name><opts.extension>
+  // Save config to this.file
   save () {
     if (this.opts.extension === '.yaml' || this.opts.extension === '.yml') {
-      fs.outputFile(this.file, yml.safeDump(this.data), err => {
-        if (err) {
-          throw new Error(err)
-        }
-      })
+      fs.outputFileSync(this.file, yml.safeDump(this.data))
     } else {
-      fs.outputFile(this.file, JSON.stringify(this.data, null, 2), err => {
-        if (err) {
-          throw new Error(err)
-        }
-      })
+      fs.outputJsonSync(this.file, this.data, { spaces: 2 })
     }
   }
 
